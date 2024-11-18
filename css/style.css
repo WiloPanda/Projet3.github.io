@@ -7,4 +7,49 @@ h2, h3, h4, h5, h6, p {
   font-family: "Roboto", sans-serif;
 }
 
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: medium;
+}
+
+/***** Intro *****/
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 39px 0px 115px 0px;
+}
+.intro .intro-title {
+  margin: 0px 58px 0px 42px;
+  text-align: center;
+}
+
+.button-intro {
+  display: flex;
+  justify-content: center;
+}
+.button-intro button {
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  background: rgb(147, 86, 220);
+  background: linear-gradient(356deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
+  color: white;
+  height: 50px;
+  width: 218px;
+  font-weight: medium;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -6,6 +6,16 @@ header {
 }
 header .logo {
   display: flex;
+  padding: 14px 13px;
+}
+header .logo img {
+  width: 197px;
+  height: 36px;
+}
+header .location {
+  display: flex;
+  gap: 17px;
+  padding: 15.5px 15.5px;
 }
 
 /*# sourceMappingURL=header.css.map */
