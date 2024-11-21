@@ -1,12 +1,12 @@
 /***** Header *****/
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 header .logo {
   display: flex;
-  padding: 14px 13px;
+  justify-content: center;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 header .logo img {
   width: 197px;
@@ -14,8 +14,13 @@ header .logo img {
 }
 header .location {
   display: flex;
+  justify-content: center;
   gap: 17px;
   padding: 15.5px 15.5px;
+  background-color: #EAEAEA;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=header.css.map */

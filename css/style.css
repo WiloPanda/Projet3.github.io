@@ -24,31 +24,54 @@ h4 {
 
 /***** Intro *****/
 .intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 39px 0px 115px 0px;
-}
-.intro .intro-title {
-  margin: 0px 58px 0px 42px;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-bottom: 57px;
+  gap: 27px;
+  background-color: #F6F6F6;
   text-align: center;
 }
-
-.button-intro {
-  display: flex;
-  justify-content: center;
+.intro__title {
+  margin: 39px 58px 0px 42px;
 }
-.button-intro button {
+.intro__subtitle {
+  margin: 0px 58px 0px 42px;
+  font-weight: 300;
+}
+.intro__button button {
   border-radius: 25px;
   border: none;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  background: rgb(147, 86, 220);
-  background: linear-gradient(356deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
+  background: #9356DC;
+  background: linear-gradient(356deg, #9356DC 0%, #FF79DA 100%);
   color: white;
   height: 50px;
   width: 218px;
-  font-weight: medium;
+  font-weight: 500;
   font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+/***** Function *****/
+.function {
+  padding-top: 48px;
+  padding-bottom: 68px;
+}
+.function__title {
+  padding-bottom: 26px;
+}
+.function__steps {
+  display: grid;
+}
+.function__steps .__step .circle {
+  display: block;
+  width: 18px;
+  padding: 3px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: purple;
+  border: none;
+  color: white;
   font-family: "Roboto", sans-serif;
 }
 
