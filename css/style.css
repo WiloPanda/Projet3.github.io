@@ -102,6 +102,7 @@ h4 {
 /***** Restaurants *****/
 .restaurants {
   padding-top: 54px;
+  background-color: #F6F6F6;
 }
 .restaurants__title {
   padding-bottom: 20px;
@@ -109,12 +110,33 @@ h4 {
 .restaurants__cards {
   display: grid;
   gap: 20px;
+  justify-content: center;
+}
+.restaurants__cards .card {
+  width: 340px;
+  height: 251px;
+  background-color: white;
+  border-radius: 20px;
 }
 .restaurants__cards .card img {
-  width: 200px;
-  height: 136px;
+  object-fit: cover;
+  width: 340px;
+  height: 150px;
   border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.restaurants__cards .card .new {
+  display: inline-block;
+  position: relative;
+  bottom: 140px;
+  left: 250px;
+  background-color: #99E2D0;
+  color: #008766;
+  padding: 7px 12px;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

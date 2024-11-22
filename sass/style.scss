@@ -4,6 +4,8 @@ $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 $bg-color: #F6F6F6;
 $header-bg: #EAEAEA;
+$new-bg:#99E2D0;
+$new-font-color:#008766;
 $subtitle-font: 300;
 $place-font:200;
 $button-font: 500;
@@ -122,6 +124,7 @@ h4 {
 /***** Restaurants *****/
 .restaurants {
     padding-top: 54px;
+    background-color: $bg-color;
 
     &__title {
         padding-bottom: 20px;
@@ -130,14 +133,34 @@ h4 {
     &__cards {
         display: grid;
         gap: 20px;
+        justify-content: center;
 
         .card {
- 
-             img {
-                width: 200px;
-                height: 136px;
+            width: 340px;
+            height: 251px;
+            background-color: white;
+            border-radius: 20px;
+            
+            img {
+                object-fit: cover;
+                width: 340px;
+                height: 150px;
                 border-top-left-radius: 20px;
-                border-bottom-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+
+            .new {
+                display:inline-block;
+                position: relative;
+                bottom: 140px;
+                left: 250px;
+                background-color: $new-bg;
+                color: $new-font-color;
+                padding: 7px 12px;
+                border-radius: 2px;
+                font-weight: 500;
+                font-size: 14px;
+                text-align: center;
             }
 
             &__content {
@@ -149,7 +172,7 @@ h4 {
                     }
 
                     &__subtitle {
-
+                        
                     }
                 }
 
