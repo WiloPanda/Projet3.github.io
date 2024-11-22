@@ -48,13 +48,19 @@ h4 {
         margin: 0px 58px 0px 42px;
         font-weight: $subtitle-font;
     }
-
+    
     &__button {
-        button {
+        display: flex;
+        justify-content: center;
+
+        .link__button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border:none;
             border-radius: 25px;
-            border: none;
+            text-decoration: none;
             box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-            background: $primary-color;
             background: linear-gradient(356deg, $primary-color 0%, $secondary-color 100%);
             color: white;
             height: 50px;
@@ -73,26 +79,86 @@ h4 {
     
     &__title {
         padding-bottom: 26px;
+        margin:0 auto;
     }
 
     &__steps {
         display: grid;
+        gap:25px;
 
         .__step {
 
-            .circle {
-                display: block;
-                width: 18px;
-                padding: 3px;
-                text-align: center;
+            .step__border {
+                display: flex;
+                align-items: center;
+                gap: 15px;
                 border-radius: 20px;
-                background-color: purple;
-                border: none;
-                color: white;
-                font-family: 'Roboto', sans-serif;
+                background-color: $bg-color;
+                box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+                margin-bottom: 20px;
+                height: 65px;
+                max-width: 322.5px;
+                min-width: min-content;
+                margin:0 auto;
+
+                .circle {
+                    display: block;
+                    width: 16px;
+                    padding: 3px;
+                    text-align: center;
+                    border-radius: 20px;
+                    background-color: $primary-color;
+                    border: none;
+                    color: white;
+                    font-family: 'Roboto', sans-serif;
+                    position: relative;
+                    right: 10px;
+                }
             }
         }
     }
 }
 
+/***** Restaurants *****/
+.restaurants {
+    padding-top: 54px;
+
+    &__title {
+        padding-bottom: 20px;
+    }
+
+    &__cards {
+        display: grid;
+        gap: 20px;
+
+        .card {
+ 
+             img {
+                width: 200px;
+                height: 136px;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+            }
+
+            &__content {
+
+                &__txt {
+
+                    &__title {
+                         
+                    }
+
+                    &__subtitle {
+
+                    }
+                }
+
+            }
+
+            &__like {
+
+            }
+        }
+    }
+}
 
