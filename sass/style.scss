@@ -137,14 +137,13 @@ h4 {
     
             .card {
                 width: 340px;
-                height: 251px;
                 background-color: white;
                 border-radius: 20px;
                 
                 .restaurants__img {
                     object-fit: cover;
-                    width: 340px;
                     height: 150px;
+                    width: 340px;
                     border-top-left-radius: 20px;
                     border-top-right-radius: 20px;
                 }
@@ -179,6 +178,15 @@ h4 {
                     font-weight: 500;
                     font-size: 14px;
                     text-align: center;
+                }
+    
+                .card__txt {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    gap:5px;
+                    padding-left: 13px;
+                    padding-top: 16px;
+                    padding-bottom: 12px;
                 }
             }
         }

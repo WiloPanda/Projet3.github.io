@@ -116,14 +116,13 @@ h4 {
 }
 .restaurants__all .restaurants__cards .card {
   width: 340px;
-  height: 251px;
   background-color: white;
   border-radius: 20px;
 }
 .restaurants__all .restaurants__cards .card .restaurants__img {
   object-fit: cover;
-  width: 340px;
   height: 150px;
+  width: 340px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -155,6 +154,14 @@ h4 {
   font-weight: 500;
   font-size: 14px;
   text-align: center;
+}
+.restaurants__all .restaurants__cards .card .card__txt {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  padding-left: 13px;
+  padding-top: 16px;
+  padding-bottom: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */
