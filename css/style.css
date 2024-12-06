@@ -102,6 +102,7 @@ h4 {
 .restaurants {
   padding-top: 54px;
   background-color: #F6F6F6;
+  padding-bottom: 66px;
 }
 .restaurants__all {
   width: 340px;
@@ -155,13 +156,21 @@ h4 {
   font-size: 14px;
   text-align: center;
 }
-.restaurants__all .restaurants__cards .card .card__txt {
+.restaurants__all .restaurants__cards .card .card__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.restaurants__all .restaurants__cards .card .card__content .card__txt {
   display: grid;
   grid-template-columns: 1fr;
   gap: 5px;
   padding-left: 13px;
   padding-top: 16px;
   padding-bottom: 12px;
+}
+.restaurants__all .restaurants__cards .card .card__content .card__like {
+  padding-right: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */

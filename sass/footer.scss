@@ -19,6 +19,19 @@ footer {
 
     .footer__menu {
        display:grid;
+       grid-template-columns: 1fr;
        gap:7px;
+
+       .footer__icon {
+            padding-right: 11px;
+       }
+
+       .footer__icon--handshake {
+            padding-right: 9px;
+       }
+
+       .fa-handshake-angle {
+            font-size: 13px;
+       }
     }
 }
