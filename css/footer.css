@@ -15,13 +15,14 @@ footer .footer__menu {
   grid-template-columns: 1fr;
   gap: 7px;
 }
-footer .footer__menu .footer__icon {
+footer .footer__menu .footer__link {
+  color: white;
+}
+footer .footer__menu .footer__link .footer__icon {
   padding-right: 11px;
 }
-footer .footer__menu .footer__icon--handshake {
+footer .footer__menu .footer__link .footer__icon--handshake {
   padding-right: 9px;
-}
-footer .footer__menu .fa-handshake-angle {
   font-size: 13px;
 }
 

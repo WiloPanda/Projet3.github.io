@@ -14,24 +14,25 @@ footer {
     padding: 22px 25px;
 
     .footer__title {
-        padding-bottom: 16px;
+          padding-bottom: 16px;
     }
 
     .footer__menu {
-       display:grid;
-       grid-template-columns: 1fr;
-       gap:7px;
+          display:grid;
+          grid-template-columns: 1fr;
+          gap:7px;
 
-       .footer__icon {
-            padding-right: 11px;
-       }
+          .footer__link {
+               color: white;
 
-       .footer__icon--handshake {
-            padding-right: 9px;
-       }
+               .footer__icon {
+                    padding-right: 11px;
+               }
 
-       .fa-handshake-angle {
-            font-size: 13px;
-       }
-    }
+               .footer__icon--handshake {
+                    padding-right: 9px;
+                    font-size: 13px;
+               }
+          }
+     }
 }
