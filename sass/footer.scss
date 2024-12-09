@@ -27,11 +27,11 @@ footer {
 
                .footer__icon {
                     padding-right: 11px;
-               }
 
-               .footer__icon--handshake {
-                    padding-right: 9px;
-                    font-size: 13px;
+                    &--handshake {
+                         padding-right: 9px;
+                         font-size: 13px;
+                    }
                }
           }
      }

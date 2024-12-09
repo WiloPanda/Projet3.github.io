@@ -111,10 +111,10 @@ a {
         margin:0 auto;
     }
 
-    .function__all {
+    &__all {
         display: grid;
         gap:25px;
-        width: 335px;
+        max-width: 335px;
         margin: auto;
 
         .step {
@@ -152,7 +152,7 @@ a {
     padding-bottom: 66px;
 
     &__all {
-        width: 340px;
+        max-width: 340px;
         margin: auto;
 
         .restaurants__title {
@@ -164,41 +164,46 @@ a {
             gap: 20px;
     
             .card {
-                width: 340px;
                 background-color: white;
                 border-radius: 20px;
                 
                 .restaurants__img {
                     object-fit: cover;
                     height: 150px;
-                    width: 340px;
+                    width: 100%;
                     border-top-left-radius: 20px;
                     border-top-right-radius: 20px;
+
+                    &--first {
+                        background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+                        background-size: cover;
+                        height: 150px;
+                        border-top-left-radius: 20px;
+                        border-top-right-radius: 20px;
+                        display: flex;
+                        justify-content: flex-end;
+                        padding-top: 10px;
+                        padding-right: 10px;
+                        box-sizing: border-box;
+                    }
+
+                    &--second {
+                        background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+                        background-size: cover;
+                        height: 150px;
+                        border-top-left-radius: 20px;
+                        border-top-right-radius: 20px;
+                        display: flex;
+                        justify-content: flex-end;
+                        padding-top: 10px;
+                        padding-right: 10px;
+                        box-sizing: border-box;
+                    }
                 }
 
-                .restaurants__img--first {
-                    background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-                    background-size: cover;
-                    width: 340px;
-                    height: 150px;
-                    border-top-left-radius: 20px;
-                    border-top-right-radius: 20px;
-                }
-
-                .restaurants__img--second {
-                    background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-                    background-size: cover;
-                    width: 340px;
-                    height: 150px;
-                    border-top-left-radius: 20px;
-                    border-top-right-radius: 20px;
-                }
-    
                 .new {
-                    display:inline-block;
-                    position: relative;
-                    top: 15px;
-                    left: 250px;
+                    display:flex;
+                    height:14px;             
                     background-color: $new-bg;
                     color: $new-font-color;
                     padding: 7px 12px;
@@ -224,6 +229,12 @@ a {
 
                     .card__like {
                         padding-right: 25px;
+                        
+                        .heart::before {
+                            background-image: linear-gradient(red, rgb(78, 219, 103));
+                            background-clip: text;
+                            color: rgba(0, 0, 0, 0.2);
+                        }
                     }
                 }
             }

@@ -91,13 +91,13 @@ a {
   padding-bottom: 26px;
   margin: 0 auto;
 }
-.function .function__all {
+.function__all {
   display: grid;
   gap: 25px;
-  width: 335px;
+  max-width: 335px;
   margin: auto;
 }
-.function .function__all .step {
+.function__all .step {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -107,7 +107,7 @@ a {
   height: 65px;
   max-width: 335px;
 }
-.function .function__all .step .circle {
+.function__all .step .circle {
   display: block;
   width: 16px;
   padding: 3px;
@@ -128,7 +128,7 @@ a {
   padding-bottom: 66px;
 }
 .restaurants__all {
-  width: 340px;
+  max-width: 340px;
   margin: auto;
 }
 .restaurants__all .restaurants__title {
@@ -139,38 +139,43 @@ a {
   gap: 20px;
 }
 .restaurants__all .restaurants__cards .card {
-  width: 340px;
   background-color: white;
   border-radius: 20px;
 }
 .restaurants__all .restaurants__cards .card .restaurants__img {
   object-fit: cover;
   height: 150px;
-  width: 340px;
+  width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 .restaurants__all .restaurants__cards .card .restaurants__img--first {
   background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: cover;
-  width: 340px;
   height: 150px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
 }
 .restaurants__all .restaurants__cards .card .restaurants__img--second {
   background-image: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
   background-size: cover;
-  width: 340px;
   height: 150px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
 }
 .restaurants__all .restaurants__cards .card .new {
-  display: inline-block;
-  position: relative;
-  top: 15px;
-  left: 250px;
+  display: flex;
+  height: 14px;
   background-color: #99E2D0;
   color: #008766;
   padding: 7px 12px;
@@ -194,6 +199,11 @@ a {
 }
 .restaurants__all .restaurants__cards .card .card__content .card__like {
   padding-right: 25px;
+}
+.restaurants__all .restaurants__cards .card .card__content .card__like .heart::before {
+  background-image: linear-gradient(red, rgb(78, 219, 103));
+  background-clip: text;
+  color: rgba(0, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=style.css.map */
