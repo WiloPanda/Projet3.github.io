@@ -228,12 +228,48 @@ a {
                     }
 
                     .card__like {
-                        padding-right: 25px;
+                        padding-right: 40px;
+                        position: relative;
+                          
+                        .fa-regular {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            z-index: 1;
+                            opacity: 1;
+                        }
+                          
+                        .fa-solid {
+                            position: absolute;                       
+                            top: 0;
+                            left: 0;
+                            z-index: 2;
+                            opacity: 0;
+                            transition: opacity 250ms ease-in-out;
+                        }
+                          
+                        .fa-solid:hover {
+                            opacity: 1;
+                        }
+
+                        .fa-regular:hover {
+                            opacity: 0;
+                        }
                         
-                        .heart::before {
-                            background-image: linear-gradient(red, rgb(78, 219, 103));
+                        .fa-regular::before {
+                            background-image: linear-gradient(356deg, black 0%, black 100%);
                             background-clip: text;
                             color: rgba(0, 0, 0, 0.2);
+                        }
+
+                        .fa-solid::before {
+                            background-image: linear-gradient(356deg, $secondary-color 0%, $primary-color 100%);
+                            background-clip: text;
+                            color: rgba(0, 0, 0, 0.2);
+                        }
+
+                        .fa-solid::before:active {
+                            opacity: 1;
                         }
                     }
                 }

@@ -198,12 +198,42 @@ a {
   padding-bottom: 12px;
 }
 .restaurants__all .restaurants__cards .card .card__content .card__like {
-  padding-right: 25px;
+  padding-right: 40px;
+  position: relative;
 }
-.restaurants__all .restaurants__cards .card .card__content .card__like .heart::before {
-  background-image: linear-gradient(red, rgb(78, 219, 103));
+.restaurants__all .restaurants__cards .card .card__content .card__like .fa-regular {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 1;
+}
+.restaurants__all .restaurants__cards .card .card__content .card__like .fa-solid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
+}
+.restaurants__all .restaurants__cards .card .card__content .card__like .fa-solid:hover {
+  opacity: 1;
+}
+.restaurants__all .restaurants__cards .card .card__content .card__like .fa-regular:hover {
+  opacity: 0;
+}
+.restaurants__all .restaurants__cards .card .card__content .card__like .fa-regular::before {
+  background-image: linear-gradient(356deg, black 0%, black 100%);
   background-clip: text;
   color: rgba(0, 0, 0, 0.2);
+}
+.restaurants__all .restaurants__cards .card .card__content .card__like .fa-solid::before {
+  background-image: linear-gradient(356deg, #FF79DA 0%, #9356DC 100%);
+  background-clip: text;
+  color: rgba(0, 0, 0, 0.2);
+}
+.restaurants__all .restaurants__cards .card .card__content .card__like .fa-solid::before:active {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
