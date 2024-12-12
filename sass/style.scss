@@ -105,17 +105,37 @@ a {
 .function {
     padding-top: 48px;
     padding-bottom: 68px;
-    
-    &__title {
-        padding-bottom: 26px;
-        margin:0 auto;
-    }
 
     &__all {
-        display: grid;
-        gap:25px;
         max-width: 335px;
         margin: auto;
+
+
+         /*****Mobile*****/
+         @media screen and (min-width: 768px) {
+            max-width: 1080px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        /*****Mobile*****/
+
+
+        h2 {
+            padding-bottom: 30px;
+        }
+    
+    .function__steps {
+        display: grid;
+        gap: 25px;
+
+
+        /*****Mobile*****/
+        @media screen and (min-width: 768px) {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 25px;
+        }
+        /*****Mobile*****/
+
 
         .step {
             display: flex;
@@ -143,7 +163,7 @@ a {
             }
         }
     }
-
+}
 
 /***** Restaurants *****/
 .restaurants {
@@ -155,6 +175,16 @@ a {
         max-width: 340px;
         margin: auto;
 
+
+        /*****Mobile*****/
+        @media screen and (min-width: 768px) {
+            max-width: 1080px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        /*****Mobile*****/
+
+
         .restaurants__title {
             padding-bottom: 20px;
         }
@@ -162,7 +192,16 @@ a {
         .restaurants__cards {
             display: grid;
             gap: 20px;
-    
+
+
+            /*****Mobile*****/
+            @media screen and (min-width: 768px) {
+                grid-template-columns: 1fr 1fr;
+                gap: 50px 100px;
+            }
+            /*****Mobile*****/
+
+
             .card {
                 background-color: white;
                 border-radius: 20px;
@@ -266,10 +305,6 @@ a {
                             background-image: linear-gradient(356deg, $secondary-color 0%, $primary-color 100%);
                             background-clip: text;
                             color: rgba(0, 0, 0, 0.2);
-                        }
-
-                        .fa-solid::before:active {
-                            opacity: 1;
                         }
                     }
                 }

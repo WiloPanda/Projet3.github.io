@@ -9,11 +9,24 @@ footer {
 }
 footer .footer__title {
   padding-bottom: 16px;
+  /*****Mobile*****/
+  /*****Mobile*****/
+}
+@media screen and (min-width: 768px) {
+  footer .footer__title {
+    display: flex;
+  }
 }
 footer .footer__menu {
   display: grid;
   grid-template-columns: 1fr;
   gap: 7px;
+}
+@media screen and (min-width: 768px) {
+  footer .footer__menu {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 footer .footer__menu .footer__link {
   color: white;

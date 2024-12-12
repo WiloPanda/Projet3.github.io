@@ -15,12 +15,28 @@ footer {
 
     .footer__title {
           padding-bottom: 16px;
-    }
+
+
+           /*****Mobile*****/
+          @media screen and (min-width: 768px) {
+               display: flex;
+          }
+          /*****Mobile*****/
+
+
+     }
 
     .footer__menu {
           display:grid;
           grid-template-columns: 1fr;
           gap:7px;
+
+
+          @media screen and (min-width: 768px) {
+               display: flex;
+               justify-content: flex-end;
+          }
+ 
 
           .footer__link {
                color: white;
