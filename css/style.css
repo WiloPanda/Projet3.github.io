@@ -102,6 +102,7 @@ a {
 }
 .function__all h2 {
   padding-bottom: 30px;
+  margin-right: 10px;
 }
 .function__all .function__steps {
   display: grid;
@@ -136,7 +137,7 @@ a {
   color: white;
   font-family: "Roboto", sans-serif;
   position: relative;
-  right: 10px;
+  right: 11px;
 }
 
 /***** Restaurants *****/

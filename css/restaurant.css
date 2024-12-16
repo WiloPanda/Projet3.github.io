@@ -1,0 +1,36 @@
+/***** General *****/
+h1 {
+  font-family: "Shrikhand", sans-serif;
+}
+
+h2, h3, h4, h5, h6, p {
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: medium;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header a {
+  color: black;
+}
+
+/***** Intro *****/
+
+/*# sourceMappingURL=restaurant.css.map */

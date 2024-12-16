@@ -2,39 +2,55 @@
 footer {
   background-color: #353535;
   color: white;
-  padding-top: 22px;
-  padding-bottom: 22px;
   font-family: "Roboto", sans-serif;
   padding: 22px 25px;
+  /*****Mobile*****/
+  /*****Mobile*****/
+}
+@media screen and (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 57px;
+  }
 }
 footer .footer__title {
   padding-bottom: 16px;
-  /*****Mobile*****/
-  /*****Mobile*****/
+}
+footer .links__all {
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  /***** Mobile *****/
+  /***** Mobile *****/
 }
 @media screen and (min-width: 768px) {
-  footer .footer__title {
+  footer .links__all {
     display: flex;
+    flex-direction: row;
   }
 }
-footer .footer__menu {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 7px;
+footer .links__all .footer__links {
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+  /***** Mobile *****/
+  /***** Mobile *****/
 }
 @media screen and (min-width: 768px) {
-  footer .footer__menu {
+  footer .links__all .footer__links {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
   }
 }
-footer .footer__menu .footer__link {
+footer .links__all .footer__links .footer__link {
   color: white;
+  margin-right: 10px;
 }
-footer .footer__menu .footer__link .footer__icon {
+footer .links__all .footer__links .footer__link .footer__icon {
   padding-right: 11px;
 }
-footer .footer__menu .footer__link .footer__icon--handshake {
+footer .links__all .footer__links .footer__link .footer__icon--handshake {
   padding-right: 9px;
   font-size: 13px;
 }

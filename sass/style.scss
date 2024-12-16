@@ -110,7 +110,6 @@ a {
         max-width: 335px;
         margin: auto;
 
-
          /*****Mobile*****/
          @media screen and (min-width: 768px) {
             max-width: 1080px;
@@ -119,15 +118,14 @@ a {
         }
         /*****Mobile*****/
 
-
         h2 {
             padding-bottom: 30px;
+            margin-left:-10px
         }
     
     .function__steps {
         display: grid;
         gap: 25px;
-
 
         /*****Mobile*****/
         @media screen and (min-width: 768px) {
@@ -135,7 +133,6 @@ a {
             gap: 25px;
         }
         /*****Mobile*****/
-
 
         .step {
             display: flex;
@@ -158,7 +155,7 @@ a {
                     color: white;
                     font-family: 'Roboto', sans-serif;
                     position: relative;
-                    right: 10px;
+                    right: 11px;
                 }
             }
         }
@@ -175,7 +172,6 @@ a {
         max-width: 340px;
         margin: auto;
 
-
         /*****Mobile*****/
         @media screen and (min-width: 768px) {
             max-width: 1080px;
@@ -183,7 +179,6 @@ a {
             padding-right: 50px;
         }
         /*****Mobile*****/
-
 
         .restaurants__title {
             padding-bottom: 20px;
@@ -193,14 +188,12 @@ a {
             display: grid;
             gap: 20px;
 
-
             /*****Mobile*****/
             @media screen and (min-width: 768px) {
                 grid-template-columns: 1fr 1fr;
                 gap: 50px 100px;
             }
             /*****Mobile*****/
-
 
             .card {
                 background-color: white;
