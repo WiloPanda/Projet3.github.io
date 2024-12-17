@@ -4,7 +4,7 @@ $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 $bg-color: #F6F6F6;
 $header-bg: #EAEAEA;
-$new-bg:#99E2D0;
+$line-bg:#99E2D0;
 $new-font-color:#008766;
 $subtitle-font: 300;
 $place-font:200;
@@ -12,6 +12,7 @@ $button-font: 500;
 
 h1 {
     font-family: 'Shrikhand', sans-serif;
+    font-weight: 300;
 }
 
 h2, h3, h4, h5, h6, p {
@@ -19,13 +20,13 @@ h2, h3, h4, h5, h6, p {
 }
 
 h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.2rem;
+    font-weight:400;
 }
 
 h3 {
-    font-size: 1.125rem;
-    font-weight: bold;
+    font-size: 1.3rem;
+    font-weight:medium;
 }
 
 h4 {
@@ -38,12 +39,168 @@ a {
     color: black;
 }
 
+
 header a {
     color: black;
 }
 
 /***** Intro *****/
+.intro__img {
+    height: 375px;
+    background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-position: center;
+    background-size: cover;  
+}
 
-.intro {
+.carte {
+    margin-top: -75px;
+    background-color:#F6F6F6;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+
+    .intro {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap:30px;
+        padding-top:40px;
+        padding-bottom: 37px;
+
+        .intro__title {
+            font-size:28px;
+        }
     
+        .menu__heart {
+            padding-right: 40px;
+            position: relative;
+            margin-top: 13px;
+                
+            .fa-regular {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                opacity: 1;
+            }
+                
+            .fa-solid {
+                position: absolute;                       
+                top: 0;
+                left: 0;
+                z-index: 2;
+                opacity: 0;
+                transition: opacity 250ms ease-in-out;
+            }
+                
+            .fa-solid:hover {
+                opacity: 1;
+            }
+
+            .fa-regular:hover {
+                opacity: 0;
+            }
+            
+            .fa-regular::before {
+                background-image: linear-gradient(356deg, black 0%, black 100%);
+                background-clip: text;
+                color: rgba(0, 0, 0, 0.2);
+            }
+
+            .fa-solid::before {
+                background-image: linear-gradient(356deg, $secondary-color 0%, $primary-color 100%);
+                background-clip: text;
+                color: rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+
+    .menu {
+        padding:13px;
+
+        &__all {
+            display: grid;
+            gap:12px;
+            padding-bottom: 40px;
+            margin: auto;
+            max-width: 634px;
+
+            @media screen and (min-width: 768px) {
+                
+            }
+
+            .menu__title {
+                border-bottom: 4px $line-bg solid;
+                padding-bottom: 6px;
+                width: 50px;
+            }
+
+            .menu__step{
+                padding: 12px 15px;
+                background-color: white;
+                border-radius: 15px;
+                display: flex;
+                justify-content: space-between;
+
+                .menu__txt {
+                    gap: 10px;
+                    display: grid;
+                }
+    
+                .menu__price {
+                    font-weight: bold;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+/***** Commandez *****/
+.order {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+
+    .link__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        text-decoration: none;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+        background: linear-gradient(356deg, $primary-color 0%, $secondary-color 100%);
+        color: white;
+        height: 50px;
+        width: 186px;    
+        font-weight: $button-font;
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+        position: relative;
+        z-index: 1;
+        &:hover {
+            &::after {
+                opacity: 1;
+                
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 25px;
+            background-color: rgba(255, 255, 255, 0.25);
+            z-index: -1;
+            transition: opacity 500ms;
+            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
+            opacity: 0;
+        }
+    }
 }
