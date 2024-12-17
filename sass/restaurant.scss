@@ -49,14 +49,18 @@ header a {
     height: 375px;
     background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
     background-position: center;
-    background-size: cover;  
+    background-size: cover;
+    
+    @media screen and (min-width: 768px) {
+        height: 383px;
+    }
 }
 
 .carte {
     margin-top: -75px;
     background-color:#F6F6F6;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 
     .intro {
         display: flex;
