@@ -51,6 +51,13 @@ header a {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
 }
+@media screen and (min-width: 768px) {
+  .carte {
+    margin: auto;
+    width: 60%;
+    margin-top: -77px;
+  }
+}
 .carte .intro {
   display: flex;
   flex-direction: row;
