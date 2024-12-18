@@ -126,6 +126,8 @@ header a {
   border-radius: 15px;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  overflow: hidden;
 }
 .carte .menu__all .menu__step .menu__txt {
   gap: 10px;
@@ -134,6 +136,32 @@ header a {
 .carte .menu__all .menu__step .menu__price {
   font-weight: bold;
   margin-top: 30px;
+}
+
+.validation {
+  position: absolute;
+  top: 50%;
+  right: -68px;
+  transform: translateY(-50%);
+  background-color: #99E2D0;
+  padding: 45px 18px;
+  transition: all 0.2s ease-in-out;
+}
+.validation .validation__check {
+  font-size: 24px;
+  color: white;
+}
+
+.menu__step:hover .validation {
+  right: 0;
+}
+
+.menu__price {
+  transition: margin-right 0.2s ease-in-out;
+}
+
+.menu__step:hover .menu__price {
+  margin-right: 60px;
 }
 
 /***** Commandez *****/
