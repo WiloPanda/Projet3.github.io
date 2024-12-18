@@ -138,14 +138,14 @@ header a {
   margin-top: 30px;
 }
 
+/***** Animation Validation *****/
 .validation {
   position: absolute;
-  top: 50%;
+  top: -30%;
   right: -68px;
-  transform: translateY(-50%);
   background-color: #99E2D0;
   padding: 45px 18px;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 .validation .validation__check {
   font-size: 24px;
@@ -157,7 +157,7 @@ header a {
 }
 
 .menu__price {
-  transition: margin-right 0.2s ease-in-out;
+  transition: margin-right 0.25s ease-in-out;
 }
 
 .menu__step:hover .menu__price {
