@@ -145,14 +145,20 @@ header a {
                 border-radius: 15px;
                 display: flex;
                 justify-content: space-between;
-                position: relative;
                 overflow: hidden;
 
                 .menu__txt {
                     gap: 10px;
                     display: grid;
                     padding: 12px 0px 12px 15px;
+
+                    .truncate {
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
                 }
+
                 .menu__animation--validation{
                     display: flex;
 
@@ -167,6 +173,11 @@ header a {
             }
         }
     }
+}
+/***** Animation menu_all *****/
+
+.menu__all {
+    
 }
 
 /***** Animation Validation *****/
