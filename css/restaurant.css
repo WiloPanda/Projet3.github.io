@@ -148,7 +148,30 @@ header a {
   padding-right: 15px;
 }
 
-/***** Animation menu_all *****/
+/***** Animation Apparition menu_all *****/
+.menu__all {
+  animation: apparition 1000ms forwards;
+  transform-origin: left;
+  transform: scale(0);
+}
+.menu__all--1 {
+  animation-delay: 333.3333333333ms;
+}
+.menu__all--2 {
+  animation-delay: 666.6666666667ms;
+}
+.menu__all--3 {
+  animation-delay: 1000ms;
+}
+
+@keyframes apparition {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 /***** Animation Validation *****/
 .validation {
   background-color: #99E2D0;

@@ -174,10 +174,30 @@ header a {
         }
     }
 }
-/***** Animation menu_all *****/
+/***** Animation Apparition menu_all *****/
+$anim-dur: 1000ms;
+$num-menu: 3;
+$anim-delay: calc($anim-dur / $num-menu);
 
 .menu__all {
-    
+    animation: apparition $anim-dur forwards;
+    transform-origin: left;
+    transform: scale(0);
+    @for $i from 1 through $num-menu {
+        &--#{$i} {
+            animation-delay: $anim-delay * $i;
+         }
+    }
+}
+
+@keyframes apparition {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
 }
 
 /***** Animation Validation *****/
