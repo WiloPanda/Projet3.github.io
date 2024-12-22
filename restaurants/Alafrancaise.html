@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ohmyfood - A la française</title>
+    <title>ohmyfood - À la française</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" 
@@ -14,8 +14,193 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/restaurant.css">
+    <link rel="stylesheet" href="../css/headerRestaurant.css">
 </head>
+
+<body>
+    <header>
+        <a class="return-arrow" href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
+        <img class="logo" src="../images/logo/ohmyfood.png" alt="logo ohmyfood">
+    </header>
+    <main>
+        <div class="intro__img img__francaise">
+        </div>
+        <section class="carte">
+            <div class="intro">
+                <div class="intro__title">
+                    <h1>À la française</h1>
+                </div>
+                <div class="menu__heart">
+                    <i class="fa-regular fa-heart fa-lg heart" aria-hidden="true"></i>
+                    <i class="fa-solid fa-heart fa-lg heart" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="menu__all menu__all--1">
+                    <div class="menu__title">
+                        <h2>ENTRÉES</h2>
+                    </div>
+                    <div class="menu__step">
+                        <div class="menu__txt">
+                            <h3 class="truncate">Tartare de poulpe acidulé</h3>
+                            <p class="truncate">Aux zestes d'orange</p>
+                        </div>
+                        <div class="menu__animation--validation">
+                            <div class="menu__price">
+                                <p>25€</p>
+                            </div>
+                            <div class="validation">
+                                <i class="validation__check fa-solid fa-circle-check" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu__step">
+                        <div class="menu__txt">
+                            <h3 class="truncate">Velouté de légumes d'antan</h3>
+                            <p class="truncate">Carotte, panais, topinambour</p>
+                        </div>
+                        <div class="menu__animation--validation">
+                            <div class="menu__price">
+                                <p>35€</p>
+                            </div>
+                            <div class="validation">
+                                <i class="validation__check fa-solid fa-circle-check" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu__step">
+                        <div class="menu__txt">
+                            <h3 class="truncate">Soupe à l'oignon</h3>
+                            <p class="truncate">Revisitée</p>
+                        </div>
+                        <div class="menu__animation--validation">
+                            <div class="menu__price">
+                                <p>20€</p>
+                            </div>
+                            <div class="validation">
+                                <i class="validation__check fa-solid fa-circle-check" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu__all menu__all--2">
+                    <div class="menu__title">
+                        <h2>PLATS</h2>
+                    </div>
+                    <div class="menu__step">
+                        <div class="menu__txt">
+                            <h3 class="truncate">Coquilles Saint-Jacques</h3>
+                            <p class="truncate">Accompagnées d'une purée de panais</p>
+                        </div>
+                        <div class="menu__animation--validation">
+                            <div class="menu__price">
+                                <p>40€</p>
+                            </div>
+                            <div class="validation">
+                                <i class="validation__check fa-solid fa-circle-check" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu__step">
+                        <div class="menu__txt">
+                            <h3 class="truncate">Magret de canard</h3>
+                            <p class="truncate">Et parmentier de pommes de terre</p>
+                        </div>
+                        <div class="menu__animation--validation">
+                            <div class="menu__price">
+                                <p>35€</p>
+                            </div>
+                            <div class="validation">
+                                <i class="validation__check fa-solid fa-circle-check" aria-hidden="true"></i>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="menu__step">
+                        <div class="menu__txt">
+                            <h3 class="truncate">Pigeonneau d’Ille-et-Vilaine</h3>
+                            <p class="truncate">Sur son lit de gnocchis aux légumes</p>
+                        </div>
+                        <div class="menu__animation--validation">
+                            <div class="menu__price">
+                                <p>44€</p>
+                            </div>
+                            <div class="validation">
+                                <i class="validation__check fa-solid fa-circle-check" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu__all menu__all--3">
+                    <div class="menu__title">
+                        <h2>DESSERTS</h2>
+                    </div>
+                    <div class="menu__step">
+                        <div class="menu__txt">
+                            <h3 class="truncate">Pétales de violettes glacés</h3>
+                            <p class="truncate">Et purée de noisettes</p>
+                        </div>
+                        <div class="menu__animation--validation">
+                            <div class="menu__price">
+                                <p>18€</p>
+                            </div>
+                            <div class="validation">
+                                <i class="validation__check fa-solid fa-circle-check" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu__step">
+                        <div class="menu__txt">
+                            <h3 class="truncate">Fondant au chocolat</h3>
+                            <p class="truncate">Revisité</p>
+                        </div>  
+                        <div class="menu__animation--validation">
+                            <div class="menu__price">
+                                <p>22€</p>
+                            </div>
+                            <div class="validation">
+                                <i class="validation__check fa-solid fa-circle-check" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu__step">
+                        <div class="menu__txt">
+                            <h3 class="truncate">Millefeuille croustillant</h3>
+                            <p class="truncate">Myrtilles et pâte d’amande</p>
+                        </div>
+                        <div class="menu__animation--validation">
+                            <div class="menu__price">
+                                <p>23€</p>
+                            </div>
+                            <div class="validation">
+                                <i class="validation__check fa-solid fa-circle-check" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order">
+                <a class="link__button" href="#">
+                    Commander
+                </a>
+            </div>
+        </section>
+        <footer>
+            <div class="footer__title">
+                <h1>ohmyfood</h1>
+            </div>
+            <div class="links__all">
+                <div class="footer__links">
+                    <a href="#" class="footer__link"><span class="footer__icon"><i class="fa-solid fa-utensils" aria-hidden="true"></i></span>Proposer un restaurant</a>
+                    <a href="#" class="footer__link"><span class="footer__icon--handshake"><i class="fa-solid fa-handshake-angle" aria-hidden="true"></i></span>Devenir partenaire</a>
+                </div>
+                <div class="footer__links">
+                    <a class="footer__link" href="#">Mentions légales</a>
+                    <a class="footer__link" href="mailto:NOMDUMAIL@MAIL.COM">Contact</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
