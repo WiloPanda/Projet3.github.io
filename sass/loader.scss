@@ -15,11 +15,11 @@ body {
 }
 
 .loader-container {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     right: 0;
-    bottom:0;
+    height: 100vh;
     background-color: white;
     z-index: 5;
     display: flex;
@@ -31,7 +31,7 @@ body {
 .loader {
     width: 35px;
     height: 80px;
-    position: fixed;
+    position: absolute;
     top:50%;
     left: 50%;
   }
@@ -43,9 +43,7 @@ body {
     padding: 3px 5px;
     border-top: 1px solid #bbb6aa;
     border-bottom: 4px solid #bbb6aa;
-    background: 
-    linear-gradient($secondary-color 0 0) bottom no-repeat content-box, 
-    #e4e0d7;
+    background: linear-gradient(to bottom, #FF79DA, #e4e0d7) bottom no-repeat content-box, #e4e0d7;
     mix-blend-mode: darken;
     animation: l1 1.5s infinite linear;
   }
@@ -53,7 +51,7 @@ body {
     content: "";
     position: absolute;
     inset: -18px calc(50% - 2px) 8px;
-    background:$tertiary-color;   
+    background: $tertiary-color;   
     transform-origin: bottom;
     transform: rotate(8deg);
   }
